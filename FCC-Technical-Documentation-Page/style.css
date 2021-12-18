@@ -1,0 +1,141 @@
+html {
+    min-width: 300px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: darkgray;
+  }
+  
+  header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: thin;
+    padding-top: 15px;
+  }
+  
+  #main-doc {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    margin: auto;  
+  }
+  
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+    padding: 10px;
+  }
+  
+  #navbar header {
+    padding-top: 10px;
+    margin: 0px;  
+  }
+  
+  #navbar ul {
+    height: 90vh;
+    padding: 0px;
+    overflow: scroll;  
+  }
+  
+  #navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    font-size: 17px;
+  }
+  
+  #navbar a {
+    display: block;
+    text-decoration: none;
+    color: #4d4e53;
+    padding: 15px 20px;
+  }
+  
+  #main-doc article {
+    text-align: justify;
+    padding: 0px 30px;
+  }
+  
+  #main-doc li {
+    padding: 0px 40px;
+  }
+  
+  span {
+    font-family: monospace;
+    background-color: #f1f0f0;
+    padding: 4px;
+    
+  }
+  
+  code { 
+    background-color: #f1f0f0;
+    padding: 10px;
+    display: block;
+    margin: 0px auto;  
+  }
+  
+  footer {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    background-image: linear-gradient(to bottom right, black, gray);
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  @media (max-width:800px) { 
+    #navbar header {
+      font-size: 18px;
+      padding: 5px;
+      background-color: white;
+    }    
+    #navbar {
+      height: 80px;    
+      width: 100%;
+      background: white;
+      border-bottom: solid;
+      z-index: 1;
+    }    
+    #navbar:hover {
+      height: 200px;
+    }    
+    #navbar ul {
+      height: 40px;
+      margin: 0px;
+      background: white;         
+    }    
+    #navbar ul:hover {
+      height: 200px;
+    }     
+    #navbar a {
+      padding: 5px;    
+    }    
+    #main-doc {   
+      position: relative;
+      margin: auto;
+      top: 60px;
+      left: 0px;    
+    }
+    #main-doc header {
+      padding-top: 90px;
+    }
+    #main-doc li {
+    padding: 0px 40px 0px 10px;
+    } 
+  }
