@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+              <h1 id="title">Cine Survey Form</h1>
+              <p id="description">Thanks for sharing your movies preferences</p> 
+            </header>  
+            <form id="survey-form">
+                <div> 
+                  <label id="name-label" for="name">Name</label> 
+                  <input class="nma" id="name" type="text" name="name" 
+                    placeholder="Enter your name" required/>
+                </div>
+                      
+                <div> 
+                  <label id="email-label" for="email">E-mail</label>
+                  <input class="nma" id="email" type="email" name="email"  
+                    placeholder="Enter your e-mail" required/>            
+                </div>
+                
+                <div>
+                  <label id="number-label" for="number">Age</label>
+                  <input class="nma" id="number" type="number" name="age"  
+                    min="10"
+                    max="110"
+                    placeholder="Enter your age"/>
+                </div>
+                
+                <div>
+                  <p>Please, select your gender</p>      
+                    <select id="dropdown" name="gender" required/>
+                      <option disabled selected option>Select a gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="none">I don't want to specify</option>
+                    </select>  
+                </div>
+                
+                <div>
+                  <p>Where do you usually watch movies?</p>              
+                    <label class="texts">
+                      <input
+                        name="device"
+                        value="cabletv"
+                        type="radio"
+                        class="radio_btn">Cable TV</label>
+                    <label class="texts">
+                      <input
+                        name="device"
+                        value="payperview"
+                        type="radio"
+                        class="radio_btn">Pay Per View</label>
+                    <label class="texts">
+                      <input
+                        name="device"
+                        value="dvd"
+                        type="radio"
+                        class="radio_btn">DVD</label>
+                    <label class="texts">
+                      <input
+                        name="device"
+                        value="streaming"
+                        type="radio"
+                        class="radio_btn">Streaming</label>
+                    <label class="texts">
+                      <input
+                        name="device"
+                        value="theater"
+                        type="radio"
+                        class="radio_btn">Movie Theater</label>
+                    <label class="texts">
+                      <input
+                        name="device"
+                        value="computer"
+                        type="radio"
+                        class="radio_btn">Computer</label>        
+                </div>
+            
+                <div id="genresbox">
+                  <p>Which genres do you like? <span class="checked">(check all that apply)</span></p> 
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="action"
+                        type="checkbox"
+                        class="checkbox_btn">Action</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="adventure"
+                        type="checkbox"
+                        class="checkbox_btn">Adventure</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="comedy"
+                        type="checkbox"
+                        class="checkbox_btn">Comedy</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="drama"
+                        type="checkbox"
+                        class="checkbox_btn">Drama</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="fantasy"
+                        type="checkbox"
+                        class="checkbox_btn">Fantasy</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="horror"
+                        type="checkbox"
+                        class="checkbox_btn">Horror</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="romance"
+                        type="checkbox"
+                        class="checkbox_btn">Romance</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="fiction"
+                        type="checkbox"
+                        class="checkbox_btn">Science Fiction</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="thriller"
+                        type="checkbox"
+                        class="checkbox_btn">Thiller</label>
+                    <label class="gnr_btn">
+                      <input
+                        name="genres"
+                        value="western"
+                        type="checkbox"
+                        class="checkbox_btn">Western</label>
+                </div>            
+                <textarea id="comments">Add your comments here</textarea>
+                <button id="submit" type="submit">Submit</button>
+            </form>           
+        </div>        
+    </body>    
+</html>

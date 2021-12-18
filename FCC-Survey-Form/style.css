@@ -1,0 +1,137 @@
+body {
+    background-image:   url(https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 360px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px black;
+    display: flex;
+    justify-content: center;   
+}
+
+.container {
+    background-color: rgba(250, 10, 10, 0.4);
+    width: 750px;
+    margin: 40px 10vw;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+#title { 
+    font-family: 'Roboto Slab';
+    font-size: 2.8rem;
+    margin: 10px auto 0px;
+    padding: 0px;
+}
+
+#description {
+    margin: 0px auto 25px;
+    padding: 0px;
+}
+
+#survey-form {
+    padding: 0px 30px;
+    margin: 0px auto;   
+}
+
+.nma {
+    width: 100%;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 14px;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0px 20px;    
+}
+
+.nma:focus {
+    box-shadow: 0 0 0 0.2rem #7894AD; 
+}
+
+p {
+    margin: 20px 0px 8px;
+    width: 100%;    
+}
+
+#dropdown {
+    margin-bottom: 15px;
+    padding: 0px;
+    width: 102%;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 14px;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.checked {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.texts {
+    display: flex;  
+}
+
+#genresbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+ 
+.gnr_btn {
+  margin: 8px 5px;  
+  width: 170px;  
+}
+
+#comments {
+  width: 94%;
+  height: 150px;
+  margin: 10px 0px; 
+  padding: 15px;
+  font-size: 18px;
+}
+
+#submit {
+  width: 99%;
+  height: 35px;
+  color: white;
+  background-color: red;
+}
+
+@media(max-width: 900px) {
+  .container {
+    width: 320px;
+    margin: 20px 0px;
+  }
+  #title {
+    font-size: 34px;
+  }
+  #description {
+    font-size: 15px;
+  }
+  #comments {
+  width: 227px;
+  margin: 10px 0px; 
+  padding: 15px;
+  font-size: 14px;
+  }
+  #submit {
+  width: 100%;  
+  }
+}
